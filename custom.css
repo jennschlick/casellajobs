@@ -10,14 +10,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	color: #0a253e;
-	font-size: 60px;
+	color: #7abf23;
+	font-size: 55px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
 }
 
 h2 {
-	color: #7abf23;
-	font-size: 30px;
-	text-transform: uppercase;
+	color: #0a253e;
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-transform: none;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 10px;
 }
 
 .wp-block-post-featured-image img {
@@ -31,7 +41,7 @@ body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alig
 }
 
 :where(body .is-layout-flex) {
-	gap: 6rem;
+	gap: 3rem;
 }
 
 a:where(:not(.wp-element-button)) {
@@ -54,13 +64,46 @@ a:where(:not(.wp-element-button)):hover {
 }
 
 .wp-site-blocks main .entry-content {
-	margin: 0 auto;
-	max-width: 900px;
-	padding: 50px 30px 0 30px;
+	margin: 0;
+	max-width: none;
+	padding: 0;
 }
 
 .wp-site-blocks main .entry-content .wp-block-group {
 	margin-bottom: 70px;
+	padding: 0 30px;
+}
+
+.wp-site-blocks main .entry-content .wp-block-group:first-child {
+	background: #0a253e;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.wp-site-blocks main .entry-content .wp-block-group:first-child h1,
+.wp-site-blocks main .entry-content .wp-block-group:first-child p {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 857px;
+}
+
+.wp-site-blocks main .entry-content .wp-block-group:first-child p {
+	color: #fff;
+}
+
+.wp-site-blocks main .entry-content .wp-block-group:nth-child(2) .is-layout-flex {
+	gap: 6rem;
+}
+
+.wp-site-blocks main .entry-content .wp-block-group:not(:first-child) {
+	border-bottom: 5px solid #e2e2e2;
+	margin: 0 auto 50px auto;
+	max-width: 920px;
+	padding-bottom: 50px;
+}
+
+.wp-site-blocks main .entry-content .wp-block-group:last-child {
+	border-bottom: 0;
 }
 
 .wpcf7-form br {
@@ -114,4 +157,9 @@ a:where(:not(.wp-element-button)):hover {
 .wpcf7-form .wpcf7-submit:hover {
 	background: #fff;
 	color: #00326f;
+}
+
+.wpcf7 form .wpcf7-response-output {
+	margin: 30px 0 0 0;
+	padding: 10px 15px;
 }

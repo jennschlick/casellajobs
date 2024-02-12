@@ -75,27 +75,41 @@ a:where(:not(.wp-element-button)):hover {
 }
 
 .wp-site-blocks main .entry-content .wp-block-group:first-child {
+	border-bottom: 0 !important;
+	margin: 0 auto !important;
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+}
+
+.wp-site-blocks main .entry-content .wp-block-group:first-child img {
+	display: block;
+	margin: 0 auto;
+	max-width: 450px;
+	width: 100%;
+}
+
+.wp-site-blocks main .entry-content .wp-block-group:nth-child(2) {
 	background: #0a253e;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-.wp-site-blocks main .entry-content .wp-block-group:first-child h1,
-.wp-site-blocks main .entry-content .wp-block-group:first-child p {
+.wp-site-blocks main .entry-content .wp-block-group:nth-child(2) h1,
+.wp-site-blocks main .entry-content .wp-block-group:nth-child(2) p {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 857px;
 }
 
-.wp-site-blocks main .entry-content .wp-block-group:first-child p {
+.wp-site-blocks main .entry-content .wp-block-group:nth-child(2) p {
 	color: #fff;
 }
 
-.wp-site-blocks main .entry-content .wp-block-group:nth-child(2) .is-layout-flex {
+.wp-site-blocks main .entry-content .wp-block-group:nth-child(3) .is-layout-flex {
 	gap: 6rem;
 }
 
-.wp-site-blocks main .entry-content .wp-block-group:not(:first-child) {
+.wp-site-blocks main .entry-content .wp-block-group:not(:nth-child(2)) {
 	border-bottom: 5px solid #e2e2e2;
 	margin: 0 auto 50px auto;
 	max-width: 920px;
